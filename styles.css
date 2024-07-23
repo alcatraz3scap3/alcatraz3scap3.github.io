@@ -1,0 +1,31 @@
+/*
+    ID- The id of an element is unique within a page
+    The id selector is used to select one unique element
+        #idname{}
+
+    Class- a class can be used on any element
+        .classname{}
+        Or it can be specified for a certain element
+            element.classname{}
+            ex: p.classname{}
+    Universal Selector- selects ALL HTML elements on a page
+        *{}
+    Element selector- selects elements based on the element name
+        element{}
+        ex: p{}
+    Grouping slectors- groups elements that share style definitions
+        p, h1, h2 {(attributes they will all share)}
+
+    CSS properties
+        Margins- used to create space around elements
+            outside of any defined borders.
+            NOTE: Top and bottom margins of elements are sometimes collapsed 
+                into a single margin that is equal to the largest of the two margins.
+            NOTE: allows negative values
+        Padding-  create space around an element's content
+            inside of any defined borders
+            NOTE: if both padding & width is an attribute
+                use "box-sizing: border-box;" to avoid 
+                the width and the padding being added together
+            NOTE: padding does not allow negative values
+*/
