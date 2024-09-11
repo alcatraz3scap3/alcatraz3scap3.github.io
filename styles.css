@@ -1,125 +1,111 @@
-/*
 
-    ID- The id of an element is unique within a page
-    The id selector is used to select one unique element
-        #idname{}
 
-    Class- a class can be used on any element
-        .classname{}
-        Or it can be specified for a certain element
-            element.classname{}
-            ex: p.classname{}
-    Universal Selector- selects ALL HTML elements on a page
-        *{}
-    Element selector- selects elements based on the element name
-        element{}
-        ex: p{}
-    Grouping slectors- groups elements that share style definitions
-        p, h1, h2 {(attributes they will all share)}
-
-    CSS properties
-        Margins- used to create space around elements
-            outside of any defined borders.
-            NOTE: Top and bottom margins of elements are sometimes collapsed 
-                into a single margin that is equal to the largest of the two margins.
-            NOTE: allows negative values
-        Padding-  create space around an element's content
-            inside of any defined borders
-            NOTE: if both padding & width is an attribute
-                use "box-sizing: border-box;" to avoid 
-                the width and the padding being added together
-            NOTE: padding does not allow negative values
-*/
-
+/*padding, border & margin included in size of containers*/
 *{
     box-sizing: border-box;
 }
 
-/*12 columns for responsive grid layout*/
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.6%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-/*style for all columns*/
 [class*="col-"]{
     float: left;
     padding: 15px;
-    border: 1px solid red;
+    border: 1px dotted red;
 }
 
-div.grid{
-    background-color: blueviolet;
-    opacity: 25%;
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
 }
 
-body{
-    margin: 0;
-    background-color: tan;
+
+html {
+font-family: "Lucida Sans", sans-serif;
 }
 
-@media screen and (max-width: 992px){
-    body{
-        background-color: blue;
-    }
+.header {
+background-color: #9933cc;
+color: #ffffff;
+padding: 15px;
+}
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+li.navblock {
+padding: 8px;
+margin-bottom: 7px;
+background-color: #33b5e5;
+color: #ffffff;
+box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+li.navblock:hover {
+background-color: #0099cc;
+}
+
+a.navref{
+    color:gray
+}
+
+a.navref:hover{
+    color: darkgray;
 }
 
 /*phone screen*/
 @media screen and (max-width: 600px){
+    [class*="col-"]{
+        width: 100%;
+    }
+
     body{
         background-color: olive;
     }
 }
 
+/*tablet*/
+@media screen and (min-width: 600px){
+   /*12 columns for responsive grid layout*/
+    .col-1-t {width: 8.33%;}
+    .col-2-t {width: 16.66%;}
+    .col-3-t {width: 25%;}
+    .col-4-t {width: 33.33%;}
+    .col-5-t {width: 41.66%;}
+    .col-6-t {width: 50%;}
+    .col-7-t {width: 58.33%;}
+    .col-8-t {width: 66.6%;}
+    .col-9-t {width: 75%;}
+    .col-10-t {width: 83.33%;}
+    .col-11-t {width: 91.66%;}
+    .col-12-t {width: 100%;} 
 
-
-
-
-
-/*
-.header {
-    background-color: #f1f1f1;
-    text-align: center;
-  }
-
-/*Navigation bar (a list in a div)
-#navbar{
-    overflow: hidden;
-    background-color: grey;
+    body{
+        background-color: brown;
+    }
 }
 
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+/*desktop*/
+@media screen and (min-width: 768px){
+   /*12 columns for responsive grid layout*/
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.6%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;} 
+
+    body{
+        background-color: thistle;
+    }
 }
-
-li.navblock{
-    float: left;
-}
-
-a.navref{
-    display: block;
-    color: rgb(97, 24, 24);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-a.navref:hover{
-    background-color: #1d0404;
-}
-
-
-*/
 
 
 
