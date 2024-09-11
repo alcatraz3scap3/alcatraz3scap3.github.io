@@ -37,11 +37,11 @@
     padding: 0;
 }
 
-.navblock{
+li.navblock{
     float: left;
 }
 
-.navref{
+a.navref{
     display: block;
     color: white;
     text-align: center;
@@ -49,7 +49,7 @@
     text-decoration: none;
 }
 
-.navref:hover{
+a.navref:hover{
     background-color: #111;
 }
 
