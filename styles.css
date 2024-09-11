@@ -31,7 +31,28 @@
             NOTE: padding does not allow negative values
 */
 
-#navbar {
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+  }
+
+/*Navigation bar*/
+#navbar{
+    overflow: hidden;
+    background-color: aqua;
+}
+
+ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -53,9 +74,6 @@ a.navref:hover{
     background-color: #1d0404;
 }
 
-h1{
-    float: left;
-}
 
 
 
