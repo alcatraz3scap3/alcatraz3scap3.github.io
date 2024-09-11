@@ -43,17 +43,19 @@ li.navblock{
 
 a.navref{
     display: block;
-    color: white;
+    color: rgb(97, 24, 24);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 a.navref:hover{
-    background-color: #111;
+    background-color: #1d0404;
 }
 
-
+h1{
+    float: left;
+}
 
 
 
