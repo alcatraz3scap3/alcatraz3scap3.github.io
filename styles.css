@@ -1,4 +1,5 @@
 /*
+
     ID- The id of an element is unique within a page
     The id selector is used to select one unique element
         #idname{}
@@ -29,3 +30,18 @@
                 the width and the padding being added together
             NOTE: padding does not allow negative values
 */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+
+
+
+
+
+
