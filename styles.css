@@ -7,6 +7,7 @@
 
 [class*="col-"]{
     float: left;
+    padding: 15vh;
     border: 1px dotted red;
 }
 
@@ -41,8 +42,6 @@ ul {
 }
 
 li.navblock {
-    display: block;
-    height: fit-content(100%);
     background-color: #e533c4;
 }
 
