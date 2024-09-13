@@ -17,7 +17,6 @@
     display: table;
 }
 
-
 html {
 font-family: "Lucida Sans", sans-serif;
 }
@@ -28,6 +27,7 @@ color: #ffffff;
 padding: 15px;
 }
 
+/*navigation bar*/
 ul {
 list-style-type: none;
 margin: 0;
@@ -53,6 +53,13 @@ a.navref{
 a.navref:hover{
     color: darkgray;
 }
+
+/*General Body*/
+img{
+    max-width: 100%;
+    height: auto;
+}
+
 
 /*phone screen*/
 @media screen and (max-width: 600px){
