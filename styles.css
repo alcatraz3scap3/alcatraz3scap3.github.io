@@ -42,7 +42,7 @@ ul {
 }
 
 li.navblock {
-height: 100%;
+height: fit-content(100%);
 background-color: #33b5e5;
 }
 
