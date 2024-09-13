@@ -28,6 +28,10 @@ padding: 15px;
 }
 
 /*navigation bar*/
+#navbar{
+    background-color: aliceblue;
+}
+
 ul {
 list-style-type: none;
 margin: 0;
@@ -35,17 +39,15 @@ padding: 0;
 }
 
 li.navblock {
-padding: 8px;
-margin-bottom: 7px;
+height: 100%;
 background-color: #33b5e5;
-color: #ffffff;
-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 li.navblock:hover {
 background-color: #0099cc;
 }
 
+/*Text of the navigation bar*/
 a.navref{
     color:gray
 }
