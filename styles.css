@@ -31,7 +31,7 @@ font-family: "Monaco", monospace;
 #navbar{
     background-color: aliceblue;
     max-width: 100vw;
-    max-height: 10vh;
+    height: 10vh;
 }
 
 ul {
@@ -43,7 +43,7 @@ ul {
 
 li.navblock {
     background-color: #e533c4;
-    max-height: 100vw;
+    min-height: 10vh;
 }
 
 li.navblock:hover {
@@ -63,10 +63,6 @@ a.navref:hover{
 img{
     max-width: 100%;
     height: auto;
-}
-
-#aboutMe{
-    align-items: center;
 }
 
 /*phone screen*/
