@@ -65,6 +65,9 @@ img{
     height: auto;
 }
 
+#aboutMe{
+    align-items: center;
+}
 
 /*phone screen*/
 @media screen and (max-width: 600px){
