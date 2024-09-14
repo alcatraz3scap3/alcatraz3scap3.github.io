@@ -27,39 +27,6 @@ font-family: "Monaco", monospace;
     padding: 15px;
 }
 
-/*navigation bar*/
-#navbar{
-    background-color: aliceblue;
-    height: 10vh;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: right;
-    font-weight: bolder;
-    font-size: large;
-}
-
-li.navblock {
-    background-color: #e533c4;
-    min-height: 10vh;
-}
-
-li.navblock:hover {
-background-color: #0099cc;
-}
-
-/*Text of the navigation bar*/
-a.navref{
-    color:rgb(38, 5, 104)
-}
-
-a.navref:hover{
-    color: rgb(252, 1, 189);
-}
-
 /*General Body*/
 img{
     max-width: 100%;
@@ -74,6 +41,10 @@ img{
 
     body{
         background-color: olive;
+    }
+
+    #navbar{
+        display: none;
     }
 }
 
@@ -96,10 +67,14 @@ img{
     body{
         background-color: brown;
     }
+    
+    #navbar{
+        display: none;
+    }
 }
 
 /*desktop*/
-@media screen and (min-width: 720px){
+@media screen and (min-width: 850px){
    /*12 columns for responsive grid layout*/
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
@@ -116,6 +91,40 @@ img{
 
     body{
         background-color: thistle;
+    }
+
+    /*navigation bar*/
+    #navbar{
+        display: block;
+        background-color: aliceblue;
+        height: 100px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: right;
+        font-weight: bolder;
+        font-size: large;
+    }
+
+    li.navblock {
+        background-color: #e533c4;
+        min-height: 100px;
+    }
+
+    li.navblock:hover {
+    background-color: #0099cc;
+    }
+
+    /*Text of the navigation bar*/
+    a.navref{
+        color:rgb(38, 5, 104)
+    }
+
+    a.navref:hover{
+        color: rgb(252, 1, 189);
     }
 
     /*about me section- trying to center in the screen*/
