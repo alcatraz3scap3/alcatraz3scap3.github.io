@@ -38,6 +38,8 @@ ul {
     margin: 0;
     padding: 0;
     text-align: right;
+    font-weight: bolder;
+    font-size: large;
 }
 
 li.navblock {
@@ -51,11 +53,11 @@ background-color: #0099cc;
 
 /*Text of the navigation bar*/
 a.navref{
-    color:gray
+    color:rgb(38, 5, 104)
 }
 
 a.navref:hover{
-    color: darkgray;
+    color: rgb(252, 1, 189);
 }
 
 /*General Body*/
