@@ -5,15 +5,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Landing Page</title>
     </head>
     <body>
 
         <div class="row header">
-            <h1>Welcome to my Website</h1>
-            <!--phone and tablet navigation button & drop down menu-->
-                     
+            <div class="col-9-t">
+                <h1>Welcome to my Website</h1>
+            </div>
+            <div id = "navMenu" class="col-3-t">
+                <button onclick="dropDown()" class="drop_button">Menu</button>
+                <div id="menu" class="dropdown_content">
+                    <a class="navRef col-9-t" href="html/resume.html">Resume</a></li>
+                    <a class="navRef col-9-t" href="html/contact.html">Contact</a></li>
+                    <a class="navRef col-9-t" href="html/certifications.html">Certifications</a></li>
+                    <a class="navRef col-9-t" href="html/programmingportfolio.html">Programming<br>Portfolio</a></li>
+                    <a class="navRef col-9-t" href="html/writingportfolio.html">Writing<br>Portfolio</a></li>
+                    <a class="navRef col-9-t" href="html/photography.html">Photography</a></li>
+                </div>
+            </div>         
         </div>
 
         <div class="row">
@@ -30,17 +40,34 @@
 
 
         <!--desktop navigation bar-->
-        <div class="row" id="navbar">
+        <div class="row" id="navBar">
             <ul>
-                <li class="col-2 col-12-t navblock"><a class="navref" href="html/resume.html">Resume</a></li>
-                <li class="col-2 col-12-t navblock"><a class="navref" href="html/contact.html">Contact</a></li>
-                <li class="col-2 col-12-t navblock"><a class="navref" href="html/certifications.html">Certifications</a></li>
-                <li class="col-2 col-12-t navblock"><a class="navref" href="html/programmingportfolio.html">Programming<br>Portfolio</a></li>
-                <li class="col-2 col-12-t navblock"><a class="navref" href="html/writingportfolio.html">Writing<br>Portfolio</a></li>
-                <li class="col-2 col-12-t navblock"><a class="navref" href="html/photography.html">Photography</a></li>
+                <li class="col-2 col-12-t navBlock"><a class="navRef" href="html/resume.html">Resume</a></li>
+                <li class="col-2 col-12-t navBlock"><a class="navRef" href="html/contact.html">Contact</a></li>
+                <li class="col-2 col-12-t navBlock"><a class="navRef" href="html/certifications.html">Certifications</a></li>
+                <li class="col-2 col-12-t navBlock"><a class="navRef" href="html/programmingportfolio.html">Programming<br>Portfolio</a></li>
+                <li class="col-2 col-12-t navBlock"><a class="navRef" href="html/writingportfolio.html">Writing<br>Portfolio</a></li>
+                <li class="col-2 col-12-t navBlock"><a class="navRef" href="html/photography.html">Photography</a></li>
             </ul>
         </div>
 
+        <script>
+            function dropDown(){
+                document.getElementById('menu').classList.toggle('show');
+            }
 
+            window.onclick = function(event){
+                if(!event.target.matches('.drop_button')){
+                    var drops = document.getElementsByClassName('dropdown_content');
+                    var i;
+                    for(i = 0; i < drops.length; i++){
+                        var showDrops = drops[i];
+                        if(showDrops.classList.contains('show')){
+                            showDrops.classList.remove('show');
+                        }
+                    }
+                }
+            }
+        </script>
     </body>
 </html>

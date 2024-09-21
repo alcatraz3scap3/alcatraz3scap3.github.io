@@ -8,7 +8,8 @@
 [class*="col-"]{
     float: left;
     padding: 15px;
-    border: 1px dotted red;
+    /*border: 1px dotted red;*/
+    
 }
 
 .row::after{
@@ -33,6 +34,36 @@ img{
     height: auto;
 }
 
+.drop_button{
+    background-color: #e533c4;
+    color: bisque;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.drop_button:hover, .drop_button:focus{
+    background-color: aquamarine;
+}
+
+#navMenu{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown_content{
+    display: none;
+}
+
+.dropdown_content a{
+    display: block;
+}
+
+.show{
+    display: block;
+}
+
 /*phone screen*/
 @media screen and (max-width: 600px){
     [class*="col-"]{
@@ -43,7 +74,7 @@ img{
         background-color: olive;
     }
 
-    #navbar{
+    #navBar{
         display: none;
     }
 }
@@ -68,8 +99,13 @@ img{
         background-color: brown;
     }
     
-    #navbar{
+    #navBar{
         display: none;
+    }
+
+    #aboutMe{
+        padding: 0 25% 0 25%;
+        background-color: rgba(127, 255, 212, 0.323);
     }
 }
 
@@ -94,7 +130,11 @@ img{
     }
 
     /*navigation bar*/
-    #navbar{
+    #navMenu{
+        display: none;
+    }
+
+    #navBar{
         display: block;
         background-color: aliceblue;
         height: 100px;
@@ -109,34 +149,24 @@ img{
         font-size: large;
     }
 
-    li.navblock {
+    li.navBlock {
         background-color: #e533c4;
         min-height: 100px;
     }
 
-    li.navblock:hover {
+    li.navBlock:hover {
     background-color: #0099cc;
     }
 
     /*Text of the navigation bar*/
-    a.navref{
+    a.navRef{
         color:rgb(38, 5, 104)
     }
 
-    a.navref:hover{
+    a.navRef:hover{
         color: rgb(252, 1, 189);
     }
-
-    /*about me section- trying to center in the screen*/
-    #aboutMe{
-        padding: 0 25% 0 25%;
-        background-color: rgba(127, 255, 212, 0.323);
-    }
 }
-
-
-
-
 
 
 
