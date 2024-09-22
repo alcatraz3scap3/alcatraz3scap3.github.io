@@ -10,21 +10,27 @@
     <body>
 
         <div class="row header">
-            <div class="col-9-t">
-                <h1>Welcome to my Website</h1>
+            <div class="col-4-p col-9-t">
+                <h1>logo</h1>
             </div>
-            <div id = "navMenu" class="col-3-t">
-                <button onclick="dropDown()" class="drop_button">Menu</button>
-                <div id="menu" class="dropdown_content">
-                    <a class="navRef col-9-t" href="html/resume.html">Resume</a></li>
-                    <a class="navRef col-9-t" href="html/contact.html">Contact</a></li>
-                    <a class="navRef col-9-t" href="html/certifications.html">Certifications</a></li>
-                    <a class="navRef col-9-t" href="html/programmingportfolio.html">Programming<br>Portfolio</a></li>
-                    <a class="navRef col-9-t" href="html/writingportfolio.html">Writing<br>Portfolio</a></li>
-                    <a class="navRef col-9-t" href="html/photography.html">Photography</a></li>
+            <div class="col-2-p col-3-t">
+                <div id = "navMenu">
+                    <div onclick="dropDown(this)" class="drop_button">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                    <div id="menu" class="dropdown_content">
+                        <a class="navRef col-6-p col-12-t" href="html/resume.html">Resume</a></li>
+                        <a class="navRef col-6-p col-12-t" href="html/contact.html">Contact</a></li>
+                        <a class="navRef col-6-p col-12-t" href="html/certifications.html">Certifications</a></li>
+                        <a class="navRef col-6-p col-12-t" href="html/programmingportfolio.html">Programming<br>Portfolio</a></li>
+                        <a class="navRef col-6-p col-12-t" href="html/writingportfolio.html">Writing<br>Portfolio</a></li>
+                        <a class="navRef col-6-p col-12-t" href="html/photography.html">Photography</a></li>
+                    </div>
                 </div>
-            </div>         
-        </div>
+            </div>
+        </div>         
 
         <div class="row">
             <div class="col-12 col-12-t" id="aboutMe">
@@ -42,31 +48,19 @@
         <!--desktop navigation bar-->
         <div class="row" id="navBar">
             <ul>
-                <li class="col-2 col-12-t navBlock"><a class="navRef" href="html/resume.html">Resume</a></li>
-                <li class="col-2 col-12-t navBlock"><a class="navRef" href="html/contact.html">Contact</a></li>
-                <li class="col-2 col-12-t navBlock"><a class="navRef" href="html/certifications.html">Certifications</a></li>
-                <li class="col-2 col-12-t navBlock"><a class="navRef" href="html/programmingportfolio.html">Programming<br>Portfolio</a></li>
-                <li class="col-2 col-12-t navBlock"><a class="navRef" href="html/writingportfolio.html">Writing<br>Portfolio</a></li>
-                <li class="col-2 col-12-t navBlock"><a class="navRef" href="html/photography.html">Photography</a></li>
+                <li class="col-2 navBlock"><a class="navRef" href="html/resume.html">Resume</a></li>
+                <li class="col-2 navBlock"><a class="navRef" href="html/contact.html">Contact</a></li>
+                <li class="col-2 navBlock"><a class="navRef" href="html/certifications.html">Certifications</a></li>
+                <li class="col-2 navBlock"><a class="navRef" href="html/programmingportfolio.html">Programming<br>Portfolio</a></li>
+                <li class="col-2 navBlock"><a class="navRef" href="html/writingportfolio.html">Writing<br>Portfolio</a></li>
+                <li class="col-2 navBlock"><a class="navRef" href="html/photography.html">Photography</a></li>
             </ul>
         </div>
 
         <script>
-            function dropDown(){
+            function dropDown(x){
                 document.getElementById('menu').classList.toggle('show');
-            }
-
-            window.onclick = function(event){
-                if(!event.target.matches('.drop_button')){
-                    var drops = document.getElementsByClassName('dropdown_content');
-                    var i;
-                    for(i = 0; i < drops.length; i++){
-                        var showDrops = drops[i];
-                        if(showDrops.classList.contains('show')){
-                            showDrops.classList.remove('show');
-                        }
-                    }
-                }
+                x.classList.toggle('change');
             }
         </script>
     </body>
