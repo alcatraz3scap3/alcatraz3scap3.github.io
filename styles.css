@@ -163,6 +163,9 @@ img{
         display: block;
         background-color: aliceblue;
         height: 100px;
+        position: fixed;
+        bottom: 0;
+        min-width: 100%;
     }
 
     ul {
@@ -190,6 +193,10 @@ img{
 
     a.navRef:hover{
         color: rgb(252, 1, 189);
+    }
+
+    #aboutMe{
+        min-height: 1500px;
     }
 }
 

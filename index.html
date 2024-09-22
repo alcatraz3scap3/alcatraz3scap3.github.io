@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><!--THIS ALLOWS USE OF LIBRARY ASSESTS-->
         <title>Landing Page</title>
     </head>
     <body>
@@ -13,22 +14,13 @@
             <div class="col-4-p col-9-t">
                 <h1>logo</h1>
             </div>
-            <div class="col-2-p col-3-t">
-                <div id = "navMenu">
-                    <div onclick="dropDown(this)" class="drop_button">
-                        <div class="bar1"></div>
-                        <div class="bar2"></div>
-                        <div class="bar3"></div>
-                    </div>
-                    <div id="menu" class="dropdown_content">
-                        <a class="navRef col-6-p col-12-t" href="html/resume.html">Resume</a></li>
-                        <a class="navRef col-6-p col-12-t" href="html/contact.html">Contact</a></li>
-                        <a class="navRef col-6-p col-12-t" href="html/certifications.html">Certifications</a></li>
-                        <a class="navRef col-6-p col-12-t" href="html/programmingportfolio.html">Programming<br>Portfolio</a></li>
-                        <a class="navRef col-6-p col-12-t" href="html/writingportfolio.html">Writing<br>Portfolio</a></li>
-                        <a class="navRef col-6-p col-12-t" href="html/photography.html">Photography</a></li>
-                    </div>
-                </div>
+            <!--PHONE AND TABLET NAVIGATION-->
+            <div id="navMenu-placeholder">
+                <script>
+                    $.get("library/navigationMenu.html", function(data){
+                        $("#navMenu-placeholder").replaceWith(data);
+                    });
+                </script>
             </div>
         </div>         
 
@@ -45,16 +37,13 @@
         </div>
 
 
-        <!--desktop navigation bar-->
-        <div class="row" id="navBar">
-            <ul>
-                <li class="col-2 navBlock"><a class="navRef" href="html/resume.html">Resume</a></li>
-                <li class="col-2 navBlock"><a class="navRef" href="html/contact.html">Contact</a></li>
-                <li class="col-2 navBlock"><a class="navRef" href="html/certifications.html">Certifications</a></li>
-                <li class="col-2 navBlock"><a class="navRef" href="html/programmingportfolio.html">Programming<br>Portfolio</a></li>
-                <li class="col-2 navBlock"><a class="navRef" href="html/writingportfolio.html">Writing<br>Portfolio</a></li>
-                <li class="col-2 navBlock"><a class="navRef" href="html/photography.html">Photography</a></li>
-            </ul>
+        <!--DESKTOP NAVIGATION-->
+        <div id="navBar-placeholder">
+            <script>
+                $.get("library/navigationBar.html", function(data){
+                    $("#navBar-placeholder").replaceWith(data);
+                });
+            </script>
         </div>
 
         <script>
