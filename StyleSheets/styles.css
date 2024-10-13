@@ -112,6 +112,7 @@ img{
         width: 100%;
         aspect-ratio: 4/3;
         min-height: 100vw;
+        overflow-x: hidden;
     }
     
 }
@@ -153,6 +154,7 @@ img{
         width: 100%;
         aspect-ratio: 4/3;
         min-height: 100vw;
+        overflow-y: hidden;
     }
 
 }
@@ -223,12 +225,13 @@ img{
     }
 
     #resumeDoc{
-        min-height: 750px;
+        margin-bottom: 100px;
     }
 
     #pdfDisplay{
         width: 100%;
         aspect-ratio: 4/3;
         min-height: 100vw;
+        overflow-y: hidden;
     }
 }
