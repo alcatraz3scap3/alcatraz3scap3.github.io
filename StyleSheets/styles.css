@@ -104,6 +104,15 @@ img{
         display: none;
     }
 
+    #resumeDoc{
+        min-height: 750px;
+    }
+
+    #pdfDisplay{
+        width: 100%;
+        aspect-ratio: 4/3;
+        min-height: 100vw;
+    }
     
 }
 
@@ -134,6 +143,16 @@ img{
     #aboutMe{
         padding: 0 25% 0 25%;
         background-color: rgba(127, 255, 212, 0.323);
+    }
+
+    #resumeDoc{
+        min-height: 750px;
+    }
+
+    #pdfDisplay{
+        width: 100%;
+        aspect-ratio: 4/3;
+        min-height: 100vw;
     }
 
 }
@@ -201,5 +220,15 @@ img{
 
     #aboutMe{
         min-height: 1500px;
+    }
+
+    #resumeDoc{
+        min-height: 750px;
+    }
+
+    #pdfDisplay{
+        width: 100%;
+        aspect-ratio: 4/3;
+        min-height: 100vw;
     }
 }
