@@ -1,4 +1,8 @@
-
+/*
+Purpose: This CSS for the site
+Author: Renee Nelson (@alcatraz3scap3 on github)
+Date Created: 10/13/2024
+*/
 
 /*padding, border & margin included in size of containers*/
 *{
@@ -18,11 +22,11 @@
     display: table;
 }
 
+/*General Body for all pages*/
 html {
 font-family: "Monaco", monospace;
 }
 
-/*General Body*/
 img{
     max-width: 100%;
     height: auto;
@@ -199,6 +203,3 @@ img{
         min-height: 1500px;
     }
 }
-
-
-
