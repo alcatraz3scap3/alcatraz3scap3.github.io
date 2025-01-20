@@ -1,0 +1,16 @@
+html{
+    height: 100%;
+    color: aliceblue;
+}
+
+body{
+    height: 100%;
+}
+
+div.service-row{
+    height: 400px;
+}
+
+div.service-grid{
+}
+
