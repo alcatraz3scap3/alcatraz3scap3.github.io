@@ -15,8 +15,45 @@
 
     <body>
         <div class="container-fluid" id="heading">
-          <h1>many mediums studio</h1>
+          <!--Dropleft for phone (xs & sm)-->
+         <div class="row d-block d-md-none">
           <div class="row">
+            <div class="col-4">
+              <h1>many mediums studio</h1>
+            </div>
+            <div class="col-4 offset-4 align-self-center">
+              <div class="btn-group dropstart">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu
+                </button>
+                <ul class="dropdown-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pages/photo.html">Photo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pages/film.html">Film</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pages/crochet.html">Crochet</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pages/ink.html">Ink</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pages/graphicdesign.html">Graphic Design</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--nav tabs for tablet & larger (md-xxl)--> 
+          <div class="row d-none d-md-block">
+            <h1>many mediums studio</h1>
               <ul class="nav nav-tabs justify-content-end">
                 <li class="nav-item">
                   <a class="nav-link" href="/index.html">Home</a>
