@@ -1,16 +1,15 @@
-html{
-    height: 100%;
-    color: aliceblue;
+#heading{
+    background-color: aqua;
 }
 
-body{
-    height: 100%;
+.container{
+    background-color: aquamarine;
 }
 
-div.service-row{
-    height: 400px;
+.row{
+    background-color: purple;
 }
 
-div.service-grid{
+.col{
+    background-color: azure;
 }
-
