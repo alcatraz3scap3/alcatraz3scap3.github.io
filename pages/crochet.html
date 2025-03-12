@@ -14,74 +14,148 @@
     </head>
 
     <body>
+        <!--nav bar start-->
         <div class="container-fluid" id="heading">
-         <!--Dropleft for phone (xs & sm)-->
-         <div class="row d-block d-md-none">
-          <div class="row">
-            <div class="col-4">
-              <h1>many mediums studio</h1>
-            </div>
-            <div class="col-4 offset-4 align-self-center">
-              <div class="btn-group dropstart">
-                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                  Menu
-                </button>
-                <ul class="dropdown-menu">
-                  <li class="nav-item">
-                    <a class="nav-link" href="/index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/pages/photo.html">Photo</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/pages/film.html">Film</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/pages/paint.html">Paint</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/pages/ink.html">Ink</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/pages/graphicdesign.html">Graphic Design</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!--nav tabs for tablet & larger (md-xxl)--> 
-          <div class="row d-none d-md-block">
+        <!--Dropleft for phone (xs & sm)-->
+    <div class="row d-block d-md-none">
+        <div class="row">
+          <div class="col-8 align-self-center">
             <h1>many mediums studio</h1>
-              <ul class="nav nav-tabs justify-content-end">
+          </div>
+          <div class="col-4 align-self-center">
+            <div class="btn-group dropstart">
+              <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Menu
+              </button>
+              <ul class="dropdown-menu">
                 <li class="nav-item">
                   <a class="nav-link" href="/index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="/pages/crochet.html">Crochet</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/pages/photo.html">Photo</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/pages/film.html">Film</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/pages/paint.html">Paint</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/pages/ink.html">Ink</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/pages/graphicdesign.html">Graphic Design</a>
+                  <a class="nav-link" href="/pages/art.html">Art</a>
                 </li>
               </ul>
+            </div>
           </div>
         </div>
+    </div>
+
+      <!--nav tabs for tablet & larger (md-xxl)--> 
+    <div class="row d-none d-md-block">
+          <h1>many mediums studio</h1>
+            <ul class="nav nav-tabs justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/pages/crochet.html">Crochet</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/photo.html">Photo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/art.html">Art</a>
+              </li>
+            </ul>
+    </div>
+        </div>
+        <!--navbar end-->
         
         <div class="container-fluid">
-          <h1>Crochet</h1>  
+          <!--content start-->
+          <!--tiles:
+            -1 image from series
+            -text overlay in upper right hand corner:
+            -Title of series (or image)
+            -location of shoot
+            -date of shoot
+            -->
+          <div class="row p-2">
+            <div class="col-sm-5" id="leftTiles">
+              <div class="row p-2" id="...Tile">
+                <div class="card text-white">
+                  <img src="..." class="card-img" alt="...">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title">TITLE</h5>
+                    <p class="card-text">Date: </p>
+                    <p class="card-text">Medium: </p>
+                  </div>
+                </div>
+              </div>
+              <div class="row p-2" id="...Tile">
+                <div class="card text-white">
+                  <img src="..." class="card-img" alt="...">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title">TITLE</h5>
+                    <p class="card-text">Date: </p>
+                    <p class="card-text">Medium: </p>
+                  </div>
+                </div>
+              </div>
+              <div class="row p-2" id="...Tile">
+                <div class="card text-white">
+                  <img src="..." class="card-img" alt="...">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title">TITLE</h5>
+                    <p class="card-text">Date: </p>
+                    <p class="card-text">Medium: </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--END OF LEFT TILES-->
+      
+            <div class="col-sm-5" id="rightTiles">
+              <div class="row p-2" id="...Tile">
+                <div class="card text-white">
+                  <img src="..." class="card-img" alt="...">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title">TITLE</h5>
+                    <p class="card-text">Date: </p>
+                    <p class="card-text">Medium: </p>
+                  </div>
+                </div>
+              </div>
+              <div class="row p-2" id="...Tile">
+                <div class="card text-white">
+                  <img src="..." class="card-img" alt="...">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title">TITLE</h5>
+                    <p class="card-text">Date: </p>
+                    <p class="card-text">Medium: </p>
+                  </div>
+                </div>
+              </div>
+              <div class="row p-2" id="...Tile">
+                <div class="card text-white">
+                  <img src="..." class="card-img" alt="...">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title">TITLE</h5>
+                    <p class="card-text">Date: </p>
+                    <p class="card-text">Medium: </p>
+                  </div>
+                </div>
+              </div>
+              <div class="row p-2" id="...Tile">
+                <div class="card text-white">
+                  <img src="..." class="card-img" alt="...">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title">TITLE</h5>
+                    <p class="card-text">Date: </p>
+                    <p class="card-text">Medium: </p>
+                  </div>
+                </div>
+              </div>       
+            </div>
+            <!--content ends-->
+  
+            <div class="col-sm-1" id="tableOfContents">
+              <h3 class="sticky-top">crochet</h3>
+            </div>
+          </div>
         </div>
     </body>
 </html>
